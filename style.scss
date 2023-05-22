@@ -1,0 +1,152 @@
+h5,
+h6,
+h1,
+p {
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+$primary-color: var(--primarycolor);
+$primary-background-color: var(--primaryBackgroundColor);
+$default-color: var(--default-color);
+$text-color: var(--text-color);
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primaryColor: #9199b9;
+  --text-color: #000;
+  --primaryBackgroundColor: #f0f3fa;
+  --default-color: #fff;
+}
+body {
+  padding: 60px 165px;
+  background-color: $default-color;
+  margin: 0;
+  transition: background-color 0.2s linear;
+  color: #343957;
+  &.dark {
+    --default-color: #343957;
+    --primaryColor: #fff;
+    --primaryBackgroundColor: #252b43;
+    --text-color: #fff;
+  }
+}
+.card-info {
+  border-radius: 5px;
+  background-color: $primary-background-color;
+  padding: 0 20px;
+  p {
+    color: #939dc0;
+    font-size: 10px;
+  }
+}
+.precentage {
+  p {
+    color: #3fc4a1;
+  }
+  color: #3fc4a1;
+  font-size: 10px;
+}
+.precentage-red {
+  p {
+    color: red;
+  }
+  color: red;
+
+  font-size: 10px;
+}
+.facebook {
+  color: #1391f7;
+}
+.twitter {
+  color: #2aa7f2;
+}
+.youtube {
+  color: #c1032a;
+}
+.instagram {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background: radial-gradient(
+    circle,
+    rgba(63, 196, 161, 1) 0%,
+    rgba(56, 160, 196, 1) 100%
+  );
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  .ball {
+    background-color: #343957;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+.card-form-data {
+  padding: 40px 60px;
+  border-radius: 5px;
+  background-color: $primary-background-color;
+  color: #939dc0;
+  white-space: nowrap;
+  .username {
+    font-size: 10px;
+  }
+  .number {
+    color: $text-color;
+    line-height: 50px;
+    font-size: 60px;
+  }
+  .text {
+    font-size: 18px;
+  }
+}
+.switch-button {
+  p {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    padding: 10px;
+  }
+}

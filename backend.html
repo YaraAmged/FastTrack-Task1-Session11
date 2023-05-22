@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/javaScript/backend.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="p-0">
+    <div class="d-flex justify-content-end m-5">
+      <a href="/dashboard.html">
+        <button class="dashboard btn btn-primary">Dashboard</button>
+      </a>
+    </div>
+    <form id="myForm" class="m-5">
+      <div class="row mb-3">
+        <label for="autoSizingSelect" class="col-sm-2 col-form-label"
+          >Type</label
+        >
+        <div class="col-sm-10">
+          <select
+            name="type"
+            class="form-select"
+            id="autoSizingSelect"
+            required
+          >
+            <option value="" disabled selected>Choose...</option>
+            <option>Facebook</option>
+            <option>Instagram</option>
+            <option>Twitter</option>
+            <option>Youtube</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="title" class="col-sm-2 col-form-label">Title</label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            name="title"
+            class="form-control"
+            pattern="^[@.a-zA-Z]+$"
+            id="title"
+            placeholder="example: @nathan"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="description" class="col-sm-2 col-form-label"
+          >Description</label
+        >
+        <div class="col-sm-10">
+          <input
+            type="text"
+            name="description"
+            class="form-control"
+            id="description"
+            placeholder="example: followers"
+            required
+            pattern="^[a-zA-Z]+$"
+          />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="cardNumber" class="col-sm-2 col-form-label">Number</label>
+        <div class="col-sm-10">
+          <input
+            type="number"
+            name="cardNumber"
+            class="form-control"
+            id="cardNumber"
+            placeholder="example: 1987"
+            pattern="^[0-9]"
+            required
+          />
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

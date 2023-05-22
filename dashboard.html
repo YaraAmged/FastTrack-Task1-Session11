@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/javaScript/dashbaord.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-12">
+        <h1>Social Media Dashboard</h1>
+      </div>
+      <div class="col-12 col-sm-10">
+        <p>Total Followers: 23,004</p>
+      </div>
+      <hr class="d-sm-none mt-3" />
+      <div class="col-12 col-sm-2">
+        <div class="switch-button d-flex gap-2 justify-content-between">
+          <p>Dark Mode</p>
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-0 mt-sm-5 g-4" id="cards-wrapper">
+      <div class="col-12 col-sm-3">
+        <div class="d-flex align-items-center h-100 justify-content-center">
+          <a href="/backend.html">
+            <button class="btn btn-primary"><i class="fa-plus"></i> Add</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 g-4">
+      <div class="col-12">
+        <h2 class="mb-4">Overview - Today</h2>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card-info p-3 d-flex flex-column gap-4">
+          <div class="d-flex justify-content-between w-100 align-items-center">
+            <p>Page Views</p>
+            <i class="facebook fa-brands fa-square-facebook"></i>
+          </div>
+          <div class="d-flex">
+            <div
+              class="d-flex justify-content-between w-100 align-items-center"
+            >
+              <h3>87</h3>
+              <div class="precentage d-flex align-items-end gap-1">
+                <i class="fa-solid fa-caret-up"></i>
+                <p>3%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card-info p-3 d-flex flex-column gap-4">
+          <div class="d-flex justify-content-between w-100 align-items-center">
+            <p>Likes</p>
+            <i class="facebook fa-brands fa-square-facebook"></i>
+          </div>
+          <div class="d-flex">
+            <div
+              class="d-flex justify-content-between w-100 align-items-center"
+            >
+              <h3>52</h3>
+              <div class="precentage-red d-flex align-items-center gap-1">
+                <i class="fa-solid fa-caret-down"></i>
+                <p>2%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card-info p-3 d-flex flex-column gap-4">
+          <div class="d-flex justify-content-between w-100 align-items-center">
+            <p>Likes</p>
+            <i class="instagram fa-brands fa-instagram"></i>
+          </div>
+          <div class="d-flex">
+            <div
+              class="d-flex justify-content-between w-100 align-items-center"
+            >
+              <h3>5462</h3>
+              <div class="precentage d-flex align-items-end gap-1">
+                <i class="fa-solid fa-caret-up"></i>
+                <p>2257%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card-info p-3 d-flex flex-column gap-4">
+          <div class="d-flex justify-content-between w-100 align-items-center">
+            <p>Profile Views</p>
+            <i class="instagram fa-brands fa-instagram"></i>
+          </div>
+          <div class="d-flex">
+            <div
+              class="d-flex justify-content-between w-100 align-items-center"
+            >
+              <h3>52k</h3>
+              <div class="precentage d-flex align-items-end gap-1">
+                <i class="fa-solid fa-caret-up"></i>
+                <p>1375%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-3">
+        <div class="card-info p-3 d-flex flex-column gap-4">
+          <div class="d-flex justify-content-between w-100 align-items-center">
+            <p>Retweets</p>
+            <i class="twitter fa-brands fa-twitter"></i>
+          </div>
+          <div class="d-flex">
+            <div
+              class="d-flex justify-content-between w-100 align-items-center"
+            >
+              <h3>117</h3>
+              <div class="precentage d-flex align-items-end gap-1">
+                <i class="fa-solid fa-caret-up"></i>
+                <p>303%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card-info p-3 d-flex flex-column gap-4">
+          <div class="d-flex justify-content-between w-100 align-items-center">
+            <p>Likes</p>
+            <i class="twitter fa-brands fa-twitter"></i>
+          </div>
+          <div class="d-flex">
+            <div
+              class="d-flex justify-content-between w-100 align-items-center"
+            >
+              <h3>507</h3>
+              <div class="precentage d-flex align-items-end gap-1">
+                <i class="fa-solid fa-caret-up"></i>
+                <p>553%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card-info p-3 d-flex flex-column gap-4">
+          <div class="d-flex justify-content-between w-100 align-items-center">
+            <p>Likes</p>
+            <i class="youtube fa-brands fa-youtube"></i>
+          </div>
+          <div class="d-flex">
+            <div
+              class="d-flex justify-content-between w-100 align-items-center"
+            >
+              <h3>107</h3>
+              <div class="precentage-red d-flex align-items-end gap-1">
+                <i class="fa-solid fa-caret-up"></i>
+                <p>19%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card-info p-3 d-flex flex-column gap-4">
+          <div class="d-flex justify-content-between w-100 align-items-center">
+            <p>Total Views</p>
+            <i class="youtube fa-brands fa-youtube"></i>
+          </div>
+          <div class="d-flex">
+            <div
+              class="d-flex justify-content-between w-100 align-items-center"
+            >
+              <h3>1407</h3>
+              <div class="precentage-red d-flex align-items-end gap-1">
+                <i class="fa-solid fa-caret-up"></i>
+                <p>12%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
